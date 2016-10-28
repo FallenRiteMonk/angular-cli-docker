@@ -6,4 +6,4 @@ RUN echo 'deb https://apt.dockerproject.org/repo debian-jessie main' >> /etc/apt
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get update && apt-get install -y docker-engine nodejs build-essential
 RUN npm install angular-cli@1.0.0-beta.14 typings -g
-RUN systemctl enable docker
+CMD ["systemctl" "enable" "docker"]
