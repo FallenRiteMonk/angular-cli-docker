@@ -5,5 +5,5 @@ RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 581
 RUN echo 'deb https://apt.dockerproject.org/repo debian-jessie main' >> /etc/apt/sources.list.d/docker.list
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get update && apt-get install -y docker-engine nodejs build-essential
-RUN npm install angular-cli@1.0.0-beta.20-1 typings@1.4.0 -g
+RUN npm install angular-cli@1.0.0-beta.20-4 typings@1.4.0 -g
 RUN systemctl enable docker
